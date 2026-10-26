@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200">
+<defs>
+ <linearGradient id="axon" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#42bce9"/><stop offset=".5" stop-color="#5b9ee8"/><stop offset="1" stop-color="#9bdcf5"/></linearGradient>
+ <radialGradient id="soma"><stop stop-color="#fff"/><stop offset=".35" stop-color="#b9edff"/><stop offset="1" stop-color="#70c8ef" stop-opacity=".25"/></radialGradient>
+ <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="2.8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<g fill="none" stroke="url(#axon)" stroke-linecap="round" stroke-linejoin="round" opacity=".88">
+<!-- Long axons connect every neuron across the scene -->
+<g stroke-width="2.1" opacity=".65"><path d="M100 240 C260 300 310 410 450 390 S650 220 790 300 S1000 500 1160 390 S1370 250 1510 330"/><path d="M180 770 C320 650 430 690 560 790 S800 930 950 790 S1210 650 1440 780"/><path d="M450 390 C470 530 530 640 560 790 M790 300 C820 450 850 620 950 790 M1160 390 C1110 530 1030 670 950 790 M100 240 C120 440 160 610 180 770 M1510 330 C1480 500 1450 650 1440 780"/></g>
+<!-- Organic dendritic trees -->
+<g stroke-width="3">
+<path d="M100 240 C130 215 145 185 152 155 M130 215 L105 190 L82 154 M130 215 L165 210 L188 185 M145 185 L178 165 L194 135 M100 240 L72 258 L48 250 M72 258 L55 282 M100 240 L115 272 L108 302 M115 272 L140 286 L153 310"/>
+<path d="M450 390 C420 360 404 330 400 300 M420 360 L385 355 L360 330 M420 360 L444 335 L450 305 M404 330 L375 305 L370 278 M450 390 L480 365 L510 360 M480 365 L492 330 L520 310 M450 390 L466 425 L450 455 M466 425 L496 440 L515 462 M450 455 L425 475 L420 505"/>
+<path d="M790 300 C760 272 750 240 755 210 M760 272 L730 260 L708 235 M760 272 L785 245 L810 230 M755 210 L732 188 L738 162 M790 300 L820 285 L848 290 M820 285 L840 258 L866 250 M790 300 L802 332 L785 358 M802 332 L830 346 L845 370"/>
+<path d="M1160 390 C1180 360 1190 328 1182 300 M1180 360 L1210 344 L1230 320 M1180 360 L1150 342 L1135 315 M1182 300 L1205 275 L1200 250 M1160 390 L1190 415 L1220 415 M1190 415 L1202 445 L1228 458 M1160 390 L1130 410 L1110 438 M1130 410 L1100 400 L1080 375"/>
+<path d="M180 770 C210 740 222 710 216 680 M210 740 L182 722 L160 700 M210 740 L242 722 L260 695 M216 680 L240 660 L238 635 M180 770 L150 790 L125 782 M150 790 L138 820 M180 770 L195 802 L188 832 M195 802 L220 815 L235 840"/>
+<path d="M560 790 C535 760 520 730 525 700 M535 760 L505 750 L488 725 M535 760 L562 738 L585 720 M525 700 L500 675 L505 650 M560 790 L590 770 L618 770 M590 770 L610 742 L638 730 M560 790 L575 825 L560 850 M575 825 L603 842 L620 866 M560 850 L535 872 L530 900"/>
+<path d="M950 790 C925 760 915 730 925 700 M925 760 L895 742 L878 718 M925 760 L950 738 L980 725 M925 700 L900 675 L910 650 M950 790 L980 772 L1008 780 M980 772 L1000 745 L1025 735 M950 790 L965 825 L950 850 M965 825 L995 840 L1012 865"/>
+<path d="M1440 780 C1410 750 1400 720 1408 690 M1410 750 L1380 735 L1360 710 M1410 750 L1440 728 L1465 715 M1408 690 L1388 665 L1395 640 M1440 780 L1470 760 L1495 765 M1470 760 L1490 735 L1515 728 M1440 780 L1455 812 L1442 840 M1455 812 L1482 830 L1495 855"/>
+</g></g>
+<!-- Neuron cell bodies: small translucent somas, never oversized bulbs -->
+<g filter="url(#glow)">
+ <g fill="url(#soma)" stroke="#59bce9" stroke-width="1.8"><circle cx="100" cy="240" r="13"/><circle cx="450" cy="390" r="14"/><circle cx="790" cy="300" r="13"/><circle cx="1160" cy="390" r="14"/><circle cx="180" cy="770" r="13"/><circle cx="560" cy="790" r="14"/><circle cx="950" cy="790" r="13"/><circle cx="1440" cy="780" r="14"/></g>
+ <g fill="#fff" opacity=".95"><circle cx="100" cy="240" r="3.2"/><circle cx="450" cy="390" r="3.4"/><circle cx="790" cy="300" r="3.2"/><circle cx="1160" cy="390" r="3.4"/><circle cx="180" cy="770" r="3.2"/><circle cx="560" cy="790" r="3.4"/><circle cx="950" cy="790" r="3.2"/><circle cx="1440" cy="780" r="3.4"/></g>
+</g>
+<!-- tiny star-like synapse sparks -->
+<g fill="#fff" stroke="#67c9f1" stroke-width="1.2" opacity=".95"><path d="M310 315 l3 9 9 3 -9 3 -3 9 -3 -9 -9 -3 9 -3z"/><path d="M680 545 l2.5 7 7 2.5 -7 2.5 -2.5 7 -2.5 -7 -7 -2.5 7 -2.5z"/><path d="M1040 590 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3z"/><path d="M1320 470 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2z"/><path d="M365 900 l2.5 7 7 2.5 -7 2.5 -2.5 7 -2.5 -7 -7 -2.5 7 -2.5z"/></g>
+</svg>

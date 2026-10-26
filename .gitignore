@@ -1,0 +1,25 @@
+﻿# Uploaded files and personal documents
+portfolio-backend/uploads/
+portfolio-backend/portfolio-backend/uploads/
+
+# Java / Maven
+**/target/
+**/hs_err_pid*.log
+**/replay_pid*.log
+
+# IDE
+**/.idea/
+**/*.iml
+.vscode/
+
+# Secrets and environment files
+**/.env
+**/.env.*
+!**/.env.example
+
+# Logs
+**/*.log
+
+# OS files
+.DS_Store
+Thumbs.db

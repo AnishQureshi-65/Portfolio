@@ -1,0 +1,1106 @@
+
+/* =========================================================
+   ADMIN EXPERIENCE
+   PREMIUM CYBER GLASS THEME
+   Updated & Responsive
+   ========================================================= */
+
+/* ==================== GLOBAL ==================== */
+
+.admin-experience-page {
+    width: 100%;
+    min-height: 100%;
+    padding: 30px;
+    color: #edf4ff;
+    box-sizing: border-box;
+}
+
+.admin-experience-page *,
+.admin-experience-page *::before,
+.admin-experience-page *::after {
+    box-sizing: border-box;
+}
+
+.admin-experience-page button,
+.admin-experience-page input,
+.admin-experience-page select,
+.admin-experience-page textarea {
+    font: inherit;
+}
+
+.admin-experience-page button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.admin-experience-page button:focus-visible,
+.admin-experience-page a:focus-visible {
+    outline: 2px solid #62d8ff;
+    outline-offset: 4px;
+}
+
+/* ==================== HEADER ==================== */
+
+.experience-page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 26px;
+}
+
+.experience-header-left {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    min-width: 0;
+}
+
+.experience-title-icon {
+    width: 58px;
+    height: 58px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(98, 216, 255, 0.35);
+    border-radius: 17px;
+
+    background: linear-gradient(
+        145deg,
+        rgba(49, 122, 255, 0.22),
+        rgba(0, 183, 172, 0.12)
+    );
+
+    color: #62d8ff;
+    font-size: 28px;
+
+    box-shadow:
+        0 0 28px rgba(49, 122, 255, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.experience-eyebrow,
+.experience-form-eyebrow {
+    color: #62d8ff;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.experience-page-header h1 {
+    margin: 4px 0 5px;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+}
+
+.experience-page-header p,
+.experience-list-header p,
+.experience-form-header p {
+    margin: 0;
+    color: #8d9ab7;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* ==================== BUTTONS ==================== */
+
+.experience-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.experience-add-btn,
+.experience-save-btn,
+.experience-empty-btn,
+.experience-cancel-btn {
+    min-height: 45px;
+    padding: 0 17px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    border-radius: 12px;
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 750;
+
+    cursor: pointer;
+    white-space: normal;
+
+    transition:
+        transform 0.22s ease,
+        box-shadow 0.22s ease,
+        border-color 0.22s ease,
+        background 0.22s ease,
+        opacity 0.22s ease;
+}
+
+.experience-add-btn,
+.experience-save-btn,
+.experience-empty-btn {
+    color: #fff;
+
+    border: 1px solid rgba(98, 216, 255, 0.38);
+
+    background: linear-gradient(
+        135deg,
+        #317aff,
+        #2469e8 48%,
+        #00b7ac
+    );
+
+    box-shadow: 0 12px 30px rgba(49, 122, 255, 0.22);
+}
+
+.experience-cancel-btn {
+    color: #aebbd5;
+
+    border: 1px solid rgba(119, 149, 205, 0.2);
+
+    background: linear-gradient(
+        145deg,
+        rgba(17, 30, 54, 0.75),
+        rgba(9, 18, 37, 0.8)
+    );
+}
+
+@media (hover: hover) {
+    .experience-add-btn:hover:not(:disabled),
+    .experience-save-btn:hover:not(:disabled),
+    .experience-empty-btn:hover:not(:disabled) {
+        transform: translateY(-2px);
+        box-shadow: 0 17px 38px rgba(49, 122, 255, 0.3);
+    }
+
+    .experience-cancel-btn:hover:not(:disabled) {
+        color: #fff;
+        transform: translateY(-2px);
+        border-color: rgba(98, 216, 255, 0.3);
+    }
+}
+
+.experience-add-btn:active:not(:disabled),
+.experience-save-btn:active:not(:disabled),
+.experience-empty-btn:active:not(:disabled),
+.experience-cancel-btn:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+/* ==================== STATS ==================== */
+
+.experience-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    margin-bottom: 26px;
+}
+
+.experience-stat-card {
+    min-width: 0;
+    min-height: 105px;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    padding: 17px 18px;
+
+    border: 1px solid rgba(119, 149, 205, 0.18);
+    border-radius: 17px;
+
+    background: linear-gradient(
+        145deg,
+        rgba(14, 28, 53, 0.78),
+        rgba(8, 17, 36, 0.82)
+    );
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease;
+}
+
+@media (hover: hover) {
+    .experience-stat-card:hover {
+        transform: translateY(-3px);
+        border-color: rgba(98, 216, 255, 0.25);
+    }
+}
+
+.experience-stat-icon {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 13px;
+    font-size: 18px;
+}
+
+.experience-stat-icon.blue {
+    color: #62d8ff;
+    background: rgba(49, 122, 255, 0.13);
+}
+
+.experience-stat-icon.teal {
+    color: #5ee5d7;
+    background: rgba(0, 183, 172, 0.11);
+}
+
+.experience-stat-icon.gold {
+    color: #ffd96b;
+    background: rgba(255, 217, 107, 0.1);
+}
+
+.experience-stat-icon.purple {
+    color: #b8a7ff;
+    background: rgba(130, 101, 255, 0.11);
+}
+
+.experience-stat-card span {
+    display: block;
+    margin-bottom: 4px;
+    color: #7f8da9;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.experience-stat-card strong {
+    color: #edf4ff;
+    font-size: 24px;
+    overflow-wrap: anywhere;
+}
+
+/* ==================== FORM CARD ==================== */
+
+.experience-form-card {
+    margin-bottom: 30px;
+    overflow: hidden;
+
+    border: 1px solid rgba(98, 216, 255, 0.2);
+    border-radius: 20px;
+
+    background: linear-gradient(
+        145deg,
+        rgba(14, 28, 53, 0.82),
+        rgba(7, 16, 34, 0.88)
+    );
+
+    box-shadow: 0 20px 55px rgba(0, 0, 0, 0.25);
+}
+
+.experience-form-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+
+    padding: 22px 24px;
+
+    border-bottom: 1px solid rgba(119, 149, 205, 0.13);
+}
+
+.experience-form-header h2,
+.experience-list-header h2 {
+    margin: 4px 0 5px;
+    color: #edf4ff;
+    font-size: 20px;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+}
+
+.experience-close-btn {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(119, 149, 205, 0.18);
+    border-radius: 10px;
+
+    color: #8d9ab7;
+    background: rgba(255, 255, 255, 0.025);
+
+    font-size: 21px;
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+.experience-close-btn:hover:not(:disabled) {
+    color: #fff;
+    border-color: rgba(255, 93, 125, 0.35);
+    background: rgba(255, 93, 125, 0.08);
+}
+
+.experience-form-body {
+    padding: 24px;
+}
+
+.experience-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 19px;
+}
+
+.experience-form-group {
+    min-width: 0;
+}
+
+.experience-form-group label {
+    display: block;
+    margin-bottom: 8px;
+
+    color: #aebbd5;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.experience-form-group input,
+.experience-form-group select,
+.experience-form-group textarea {
+    width: 100%;
+    min-width: 0;
+
+    border: 1px solid rgba(119, 149, 205, 0.2);
+    border-radius: 11px;
+
+    outline: none;
+
+    background: linear-gradient(
+        145deg,
+        rgba(5, 14, 30, 0.74),
+        rgba(8, 18, 37, 0.68)
+    );
+
+    color: #edf4ff;
+
+    font-family: inherit;
+    font-size: 13px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.experience-form-group input,
+.experience-form-group select {
+    height: 44px;
+    padding: 0 13px;
+}
+
+.experience-form-group textarea {
+    min-height: 105px;
+    padding: 12px 13px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+.experience-form-group select option {
+    color: #edf4ff;
+    background: #0b1830;
+}
+
+.experience-form-group input::placeholder,
+.experience-form-group textarea::placeholder {
+    color: #71809d;
+    opacity: 1;
+}
+
+.experience-form-group input:focus,
+.experience-form-group select:focus,
+.experience-form-group textarea:focus {
+    border-color: rgba(98, 216, 255, 0.65);
+    box-shadow: 0 0 0 3px rgba(49, 122, 255, 0.12);
+}
+
+.experience-form-group input:disabled,
+.experience-form-group select:disabled,
+.experience-form-group textarea:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+.experience-description-group {
+    margin-top: 19px;
+}
+
+/* ==================== FORM CHECKBOXES ==================== */
+
+.experience-form-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.experience-checkbox-label {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 9px;
+
+    margin: 0 !important;
+
+    color: #8d9ab7 !important;
+    cursor: pointer;
+    line-height: 1.5;
+}
+
+/*
+   Keep the real checkbox accessible to keyboard and screen readers.
+   The adjacent custom checkbox provides the visual appearance.
+*/
+
+.experience-checkbox-label input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.experience-custom-checkbox {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(119, 149, 205, 0.3);
+    border-radius: 6px;
+
+    color: transparent;
+    background: rgba(255, 255, 255, 0.025);
+
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.experience-checkbox-label input:checked
+    + .experience-custom-checkbox {
+    color: #fff;
+    border-color: #317aff;
+
+    background: linear-gradient(
+        135deg,
+        #317aff,
+        #00b7ac
+    );
+}
+
+.experience-checkbox-label input:focus-visible
+    + .experience-custom-checkbox {
+    outline: 2px solid #62d8ff;
+    outline-offset: 3px;
+}
+
+.experience-checkbox-label input:disabled
+    + .experience-custom-checkbox {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* ==================== FORM ACTIONS ==================== */
+
+.experience-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin-top: 22px;
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(119, 149, 205, 0.12);
+}
+
+/* ==================== COLLECTION HEADER ==================== */
+
+.experience-list-section {
+    width: 100%;
+    min-width: 0;
+}
+
+.experience-list-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 16px;
+
+    margin-bottom: 18px;
+}
+
+.experience-count-badge {
+    min-height: 32px;
+    flex-shrink: 0;
+
+    display: inline-flex;
+    align-items: center;
+
+    padding: 0 12px;
+
+    border: 1px solid rgba(98, 216, 255, 0.18);
+    border-radius: 9px;
+
+    color: #62d8ff;
+    background: rgba(49, 122, 255, 0.07);
+
+    font-size: 11px;
+    font-weight: 800;
+}
+
+/* ==================== EMPTY STATE ==================== */
+
+.experience-empty {
+    min-height: 320px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 35px;
+
+    text-align: center;
+
+    border: 1px dashed rgba(119, 149, 205, 0.2);
+    border-radius: 18px;
+
+    background: linear-gradient(
+        145deg,
+        rgba(14, 28, 53, 0.42),
+        rgba(7, 16, 34, 0.52)
+    );
+}
+
+.experience-empty-icon {
+    width: 66px;
+    height: 66px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 14px;
+
+    border: 1px solid rgba(98, 216, 255, 0.18);
+    border-radius: 18px;
+
+    color: #62d8ff;
+    background: rgba(49, 122, 255, 0.07);
+
+    font-size: 29px;
+}
+
+.experience-empty h3 {
+    margin: 0 0 7px;
+    color: #edf4ff;
+    font-size: 17px;
+}
+
+.experience-empty p {
+    max-width: 420px;
+
+    margin: 0 0 18px;
+
+    color: #8d9ab7;
+    font-size: 12px;
+    line-height: 1.65;
+}
+
+/* ==================== MESSAGES ==================== */
+
+.experience-success-message,
+.experience-error-message {
+    width: 100%;
+    margin-bottom: 18px;
+    padding: 13px 16px;
+
+    border-radius: 11px;
+
+    font-size: 13px;
+    font-weight: 650;
+    line-height: 1.6;
+
+    overflow-wrap: anywhere;
+}
+
+.experience-success-message {
+    color: #75f1d5;
+    border: 1px solid rgba(94, 229, 215, 0.22);
+
+    background: linear-gradient(
+        145deg,
+        rgba(0, 183, 172, 0.1),
+        rgba(14, 28, 53, 0.45)
+    );
+}
+
+.experience-error-message {
+    color: #ff9aae;
+    border: 1px solid rgba(255, 93, 125, 0.25);
+
+    background: linear-gradient(
+        145deg,
+        rgba(255, 93, 125, 0.1),
+        rgba(14, 28, 53, 0.45)
+    );
+}
+
+/* ==================== EXPERIENCE GRID ==================== */
+
+.experience-collection-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+/* ==================== EXPERIENCE CARD ==================== */
+
+.experience-card {
+    position: relative;
+    min-width: 0;
+    padding: 20px;
+
+    border: 1px solid rgba(119, 149, 205, 0.18);
+    border-radius: 17px;
+
+    background: linear-gradient(
+        145deg,
+        rgba(14, 28, 53, 0.78),
+        rgba(8, 17, 36, 0.84)
+    );
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+@media (hover: hover) {
+    .experience-card:hover {
+        transform: translateY(-3px);
+        border-color: rgba(98, 216, 255, 0.28);
+        box-shadow: 0 18px 38px rgba(0, 0, 0, 0.24);
+    }
+}
+
+/* ==================== CARD TOP ==================== */
+
+.experience-card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 14px;
+
+    margin-bottom: 14px;
+}
+
+.experience-card-top > div {
+    min-width: 0;
+}
+
+.experience-card-position {
+    color: #edf4ff;
+    font-size: 17px;
+    font-weight: 800;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+}
+
+.experience-card-company {
+    margin-top: 5px;
+    color: #62d8ff;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+/* ==================== FEATURED BADGE ==================== */
+
+.experience-featured-badge {
+    flex-shrink: 0;
+    padding: 6px 9px;
+
+    border: 1px solid rgba(255, 217, 107, 0.2);
+    border-radius: 8px;
+
+    color: #ffd96b;
+    background: rgba(255, 217, 107, 0.08);
+
+    font-size: 10px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+/* ==================== CARD META ==================== */
+
+.experience-card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 13px;
+}
+
+.experience-card-meta span {
+    max-width: 100%;
+    padding: 6px 9px;
+
+    border: 1px solid rgba(119, 149, 205, 0.15);
+    border-radius: 8px;
+
+    color: #aebbd5;
+    background: rgba(255, 255, 255, 0.025);
+
+    font-size: 11px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+/* ==================== CARD DATES ==================== */
+
+.experience-card-dates {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-bottom: 14px;
+
+    color: #aebbd5;
+    font-size: 12px;
+    font-weight: 650;
+    line-height: 1.6;
+}
+
+.experience-card-dates span:nth-child(2) {
+    color: #62d8ff;
+}
+
+/* ==================== DESCRIPTION ==================== */
+
+.experience-card-description {
+    margin: 0 0 15px;
+
+    color: #8d9ab7;
+    font-size: 12px;
+    line-height: 1.75;
+
+    overflow-wrap: anywhere;
+    white-space: pre-line;
+}
+
+/* ==================== TECHNOLOGIES ==================== */
+
+.experience-card-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-bottom: 15px;
+}
+
+.experience-card-technologies span {
+    max-width: 100%;
+    padding: 5px 8px;
+
+    border: 1px solid rgba(98, 216, 255, 0.15);
+    border-radius: 7px;
+
+    color: #9eeaff;
+    background: rgba(49, 122, 255, 0.07);
+
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+/* ==================== COMPANY LINK ==================== */
+
+.experience-company-link {
+    display: inline-flex;
+    align-items: center;
+    max-width: 100%;
+
+    margin-bottom: 16px;
+
+    color: #62d8ff;
+    font-size: 11px;
+    font-weight: 750;
+
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+
+    transition: color 0.2s ease;
+}
+
+.experience-company-link:hover {
+    color: #fff;
+}
+
+/* ==================== CARD ACTIONS ==================== */
+
+.experience-card-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+
+    padding-top: 15px;
+    border-top: 1px solid rgba(119, 149, 205, 0.12);
+}
+
+.experience-edit-btn,
+.experience-delete-btn {
+    min-height: 36px;
+    padding: 0 12px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    border-radius: 9px;
+
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 750;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.experience-edit-btn {
+    color: #62d8ff;
+    border: 1px solid rgba(98, 216, 255, 0.2);
+    background: rgba(49, 122, 255, 0.07);
+}
+
+.experience-delete-btn {
+    color: #ff9aae;
+    border: 1px solid rgba(255, 93, 125, 0.18);
+    background: rgba(255, 93, 125, 0.06);
+}
+
+@media (hover: hover) {
+    .experience-edit-btn:hover:not(:disabled) {
+        transform: translateY(-1px);
+        border-color: rgba(98, 216, 255, 0.4);
+        background: rgba(49, 122, 255, 0.13);
+    }
+
+    .experience-delete-btn:hover:not(:disabled) {
+        transform: translateY(-1px);
+        border-color: rgba(255, 93, 125, 0.38);
+        background: rgba(255, 93, 125, 0.1);
+    }
+}
+
+/* ==================== DISABLED STATES ==================== */
+
+.experience-add-btn:disabled,
+.experience-save-btn:disabled,
+.experience-empty-btn:disabled,
+.experience-cancel-btn:disabled,
+.experience-close-btn:disabled,
+.experience-delete-btn:disabled,
+.experience-edit-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* ==================== RESPONSIVE: TABLET ==================== */
+
+@media (max-width: 1100px) {
+    .experience-stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 900px) {
+    .experience-collection-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==================== RESPONSIVE: MOBILE ==================== */
+
+@media (max-width: 760px) {
+    .admin-experience-page {
+        padding: 20px;
+    }
+
+    .experience-page-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .experience-header-actions {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .experience-form-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .experience-list-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 520px) {
+    .admin-experience-page {
+        padding: 15px;
+    }
+
+    .experience-header-left {
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .experience-title-icon {
+        width: 46px;
+        height: 46px;
+        border-radius: 13px;
+        font-size: 22px;
+    }
+
+    .experience-page-header h1 {
+        font-size: 23px;
+    }
+
+    .experience-page-header p,
+    .experience-list-header p,
+    .experience-form-header p {
+        font-size: 12px;
+    }
+
+    .experience-stats-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .experience-stat-card {
+        min-height: 90px;
+        padding: 15px;
+    }
+
+    .experience-header-actions,
+    .experience-add-btn {
+        width: 100%;
+    }
+
+    .experience-header-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .experience-form-header {
+        padding: 18px;
+    }
+
+    .experience-form-body {
+        padding: 18px;
+    }
+
+    .experience-form-options {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .experience-form-actions {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+
+    .experience-cancel-btn,
+    .experience-save-btn {
+        width: 100%;
+    }
+
+    .experience-empty {
+        min-height: 260px;
+        padding: 24px 16px;
+    }
+
+    .experience-card {
+        padding: 17px;
+    }
+
+    .experience-card-top {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .experience-featured-badge {
+        align-self: flex-start;
+    }
+
+    .experience-card-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .experience-edit-btn,
+    .experience-delete-btn {
+        width: 100%;
+    }
+}
+
+/* ==================== REDUCED MOTION ==================== */
+
+@media (prefers-reduced-motion: reduce) {
+    .admin-experience-page *,
+    .admin-experience-page *::before,
+    .admin-experience-page *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

@@ -1,0 +1,545 @@
+/* =========================================================
+   ADMIN SETTINGS
+   PREMIUM CYBER GLASS THEME
+   ========================================================= */
+
+.admin-settings-page {
+    width: 100%;
+    min-height: 100%;
+    padding: 30px;
+    color: #edf4ff;
+}
+
+/* HEADER */
+
+.settings-page-header {
+    margin-bottom: 26px;
+}
+
+.settings-header-left {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.settings-title-icon {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(98, 216, 255, 0.35);
+    border-radius: 17px;
+
+    color: #62d8ff;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(49, 122, 255, 0.22),
+            rgba(0, 183, 172, 0.12)
+        );
+
+    font-size: 26px;
+
+    box-shadow:
+        0 0 28px rgba(49, 122, 255, 0.12);
+}
+
+.settings-eyebrow {
+    color: #62d8ff;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.settings-page-header h1 {
+    margin: 4px 0 5px;
+
+    color: #edf4ff;
+
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.settings-page-header p {
+    margin: 0;
+
+    color: #8d9ab7;
+    font-size: 14px;
+}
+
+/* SUCCESS */
+
+.settings-success {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    min-height: 48px;
+
+    margin-bottom: 20px;
+    padding: 10px 14px;
+
+    border: 1px solid rgba(0, 183, 172, 0.25);
+    border-radius: 13px;
+
+    color: #9ef2e9;
+
+    background: rgba(0, 183, 172, 0.07);
+
+    font-size: 13px;
+}
+
+.settings-success span {
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: #5ee5d7;
+    background: rgba(0, 183, 172, 0.15);
+}
+
+/* CARD */
+
+.settings-card {
+    margin-bottom: 20px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(119, 149, 205, 0.18);
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(14, 28, 53, 0.78),
+            rgba(7, 16, 34, 0.84)
+        );
+
+    box-shadow:
+        0 16px 40px rgba(0, 0, 0, 0.2);
+
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+.settings-card-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    padding: 22px 24px;
+
+    border-bottom: 1px solid rgba(119, 149, 205, 0.12);
+}
+
+.settings-section-icon {
+    width: 43px;
+    height: 43px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border: 1px solid rgba(98, 216, 255, 0.2);
+    border-radius: 12px;
+
+    color: #62d8ff;
+    background: rgba(49, 122, 255, 0.08);
+
+    font-size: 18px;
+}
+
+.settings-card-header h2 {
+    margin: 0 0 4px;
+
+    color: #edf4ff;
+
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.settings-card-header p {
+    margin: 0;
+
+    color: #71809d;
+
+    font-size: 12px;
+}
+
+/* SETTINGS OPTIONS */
+
+.settings-options {
+    padding: 4px 24px;
+}
+
+.setting-row {
+    min-height: 82px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    border-bottom: 1px solid rgba(119, 149, 205, 0.09);
+}
+
+.setting-row:last-child {
+    border-bottom: 0;
+}
+
+.setting-row-info {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.setting-row-icon {
+    width: 39px;
+    height: 39px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 11px;
+
+    font-size: 15px;
+}
+
+.setting-row-icon.blue {
+    color: #62d8ff;
+    background: rgba(49, 122, 255, 0.11);
+}
+
+.setting-row-icon.gold {
+    color: #ffd96b;
+    background: rgba(255, 217, 107, 0.09);
+}
+
+.setting-row-icon.teal {
+    color: #5ee5d7;
+    background: rgba(0, 183, 172, 0.1);
+}
+
+.setting-row h3 {
+    margin: 0 0 4px;
+
+    color: #dce7fa;
+
+    font-size: 13px;
+    font-weight: 750;
+}
+
+.setting-row p {
+    margin: 0;
+
+    color: #71809d;
+
+    font-size: 11px;
+    line-height: 1.45;
+}
+
+/* TOGGLE */
+
+.settings-toggle {
+    position: relative;
+
+    width: 46px;
+    height: 25px;
+
+    flex-shrink: 0;
+
+    cursor: pointer;
+}
+
+.settings-toggle input {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+
+    opacity: 0;
+}
+
+.settings-toggle-track {
+    position: absolute;
+    inset: 0;
+
+    border: 1px solid rgba(119, 149, 205, 0.28);
+    border-radius: 30px;
+
+    background: #172744;
+
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.settings-toggle-track span {
+    position: absolute;
+
+    top: 3px;
+    left: 3px;
+
+    width: 17px;
+    height: 17px;
+
+    border-radius: 50%;
+
+    background: #7f8da9;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+.settings-toggle input:checked
+    + .settings-toggle-track {
+    border-color: rgba(98, 216, 255, 0.45);
+
+    background:
+        linear-gradient(
+            90deg,
+            #317aff,
+            #00b7ac
+        );
+
+    box-shadow:
+        0 0 18px rgba(49, 122, 255, 0.2);
+}
+
+.settings-toggle input:checked
+    + .settings-toggle-track span {
+    transform: translateX(21px);
+
+    background: #fff;
+}
+
+/* INFORMATION */
+
+.settings-info-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 14px;
+
+    padding: 22px 24px;
+}
+
+.settings-info-box {
+    min-height: 78px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 14px;
+
+    border: 1px solid rgba(119, 149, 205, 0.13);
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.018);
+}
+
+.settings-info-box span {
+    margin-bottom: 6px;
+
+    color: #71809d;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.settings-info-box strong {
+    color: #dce7fa;
+
+    font-size: 13px;
+}
+
+/* SECURITY */
+
+.security-row {
+    min-height: 85px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 20px 24px;
+}
+
+.security-row h3 {
+    margin: 0 0 5px;
+
+    color: #dce7fa;
+
+    font-size: 13px;
+}
+
+.security-row p {
+    margin: 0;
+
+    color: #71809d;
+
+    font-size: 11px;
+}
+
+.security-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    min-height: 30px;
+
+    padding: 0 11px;
+
+    border: 1px solid rgba(0, 183, 172, 0.2);
+    border-radius: 8px;
+
+    color: #7be9dd;
+
+    background: rgba(0, 183, 172, 0.07);
+
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.security-status span {
+    font-size: 8px;
+}
+
+/* SAVE */
+
+.settings-actions {
+    display: flex;
+    justify-content: flex-end;
+
+    padding-top: 4px;
+}
+
+.settings-save-btn {
+    min-height: 45px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 0 19px;
+
+    border: 1px solid rgba(98, 216, 255, 0.38);
+    border-radius: 12px;
+
+    color: #fff;
+
+    background:
+        linear-gradient(
+            135deg,
+            #317aff,
+            #2469e8 48%,
+            #00b7ac
+        );
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 750;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 12px 30px rgba(49, 122, 255, 0.22);
+
+    transition: all 0.22s ease;
+}
+
+.settings-save-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 17px 38px rgba(49, 122, 255, 0.3);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+    .settings-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 760px) {
+    .admin-settings-page {
+        padding: 20px;
+    }
+
+    .setting-row {
+        align-items: flex-start;
+        padding: 18px 0;
+    }
+
+    .security-row {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .settings-actions {
+        width: 100%;
+    }
+
+    .settings-save-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 520px) {
+    .admin-settings-page {
+        padding: 15px;
+    }
+
+    .settings-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .settings-header-left {
+        gap: 12px;
+    }
+
+    .settings-title-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 14px;
+    }
+
+    .settings-options {
+        padding: 4px 18px;
+    }
+
+    .settings-card-header {
+        padding: 18px;
+    }
+}
